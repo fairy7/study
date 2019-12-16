@@ -1,0 +1,10 @@
+spring如何在web应用中使用？
+
+1）加入jar包
+spring-web.jar
+spring-webmvc.jar
+
+2)创建IOC容器
+服务器加载时创建
+在ServletContextListener#contextInitialized(ServletContextEvent sce)方法中创建
+并将ctx置于servletContext(即application 域)的一个属性中
